@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const db = require('../config/db');
 const { response } = require('express');
 
-
+// Register logic function
 exports.registerUser = async (req, res) => {
     const {
         first_name,
