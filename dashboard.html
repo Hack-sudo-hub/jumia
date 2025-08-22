@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyShop - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>MyShop Admin</h2>
+      <ul>
+        <li class="active">🏠 Dashboard</li>
+        <li>📦 Products</li>
+        <li>📂 Categories</li>
+        <li>🛒 Orders</li>
+        <li>👤 Users</li>
+        <li>⚙️ Settings</li>
+        <li class="logout">🚪 Logout</li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <h1>Dashboard</h1>
+        <p>Welcome back, Admin 👋</p>
+      </header>
+
+      <!-- Stats Cards -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>1,240</h3>
+          <p>Products</p>
+        </div>
+        <div class="stat-card">
+          <h3>320</h3>
+          <p>Orders</p>
+        </div>
+        <div class="stat-card">
+          <h3>150</h3>
+          <p>Users</p>
+        </div>
+        <div class="stat-card">
+          <h3>$12,430</h3>
+          <p>Revenue</p>
+        </div>
+      </section>
+
+      <!-- Orders Table -->
+      <section class="orders">
+        <h2>Recent Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Status</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1234</td>
+              <td>John Doe</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td>$250</td>
+            </tr>
+            <tr>
+              <td>#1235</td>
+              <td>Jane Smith</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>$150</td>
+            </tr>
+            <tr>
+              <td>#1236</td>
+              <td>Michael Lee</td>
+              <td><span class="status cancelled">Cancelled</span></td>
+              <td>$90</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

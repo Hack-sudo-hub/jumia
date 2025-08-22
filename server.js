@@ -39,6 +39,24 @@ app.use(express.static(path.join(__dirname, "public")));
 //Routes
 app.use("/auth", routes);
 
+app.get('/', (request, response) => {
+    response.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/register', (request, response) => {
+    response.sendFile(path.join(__dirname, 'signup.html'));
+});
+
+app.get('/login', (request, response) => {
+    response.sendFile(path.join(__dirname, 'login.html'));
+});
+
+app.get('/dashboard', (request, response) => {
+    response.sendFile(path.join(__dirname, 'dashboard.html'));
+});
+
+//log out route
+
 
 // Start the server
 
@@ -46,3 +64,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
     console.log(`Server runinng on http://localhost:${PORT}`)
 );
+
+

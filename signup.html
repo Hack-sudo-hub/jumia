@@ -9,7 +9,7 @@
   <header>
     <div class="logo">Zak mart</div>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       <a href="product.html">Products</a>
       <a href="about.html">About</a>
       <a href="contaact.html">Contact</a>
@@ -19,14 +19,14 @@
 
   <section class="login-form">
     <h2>Create Your Account</h2>
-    <form action="#" method="post" onsubmit="return validateSignup()">
-      <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
-      <input type="text" id="username" name="username" placeholder="Username" required>
-      <input type="email" id="email" name="email" placeholder="Email" required>
-      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-      <input type="Adress" id="Adress" street="Adress" placeholder="Adress" required>
-      <input type="password" id="password" name="password" placeholder="Password" required>
-      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+    <form action="#" method="post"  id='frm-register'>
+      <input type="firstname" id="first_name"name="first_name" placeholder="First name">
+      <input type="lastname" id="last_name"name="last_name" placeholder="Last name">
+      <input type="email" id="email" name="email" placeholder="Email">
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+      <input type="Adress" id="address" street="Adress" placeholder="Adress">
+      <input type="password" id="password" name="password" placeholder="Password">
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
       
       <button type="submit">Sign Up</button>
     </form>
@@ -37,19 +37,7 @@
     <p>&copy; 2025 Zak Mart | Contact | Privacy</p>
   </footer>
 
-  <script>
-    function validateSignup() {
-      const password = document.getElementById("password").value;
-      const confirmPassword = document.getElementById("confirmPassword").value;
-
-      if (password !== confirmPassword) {
-        alert("Passwords do not match!");
-        return false;
-      }
-
-      alert("Signup successful!");
-      return true;
-    }
+  <script src="public/script.js">
   </script>
 </body>
 </html>
